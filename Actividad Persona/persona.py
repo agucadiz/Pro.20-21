@@ -8,10 +8,12 @@ class Persona:
         if not isinstance(otro, type(self)):
             return NotImplemented
         return (self.__nombre, self.__edad) == (otro.__nombre, otro.__edad)
-
+    
+    """
     def __hash__(self):
         return hash((self.__nombre, self.__edad))
-
+    """
+    
     def __repr__(self):
         return f'Persona({self.__nombre}, {self.__edad})'
 
